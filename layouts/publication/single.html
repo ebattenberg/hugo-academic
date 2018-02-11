@@ -7,8 +7,10 @@
   <div class="article-container">
     <h1 itemprop="name">{{ .Title }}</h1>
     <span class="pub-authors" itemprop="author">
-      {{ with .Params.authors }}
-      {{ delimit . ", " | markdownify }}
+      {{ if .Params.authors_long }}
+        {{ delimit .Params.authors_long ", " | markdownify }}
+      {{ else if .Params.authors }}
+        {{ delimit .Params.authors ", " | markdownify }}
       {{ end }}
     </span>
     <span class="pull-right">

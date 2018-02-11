@@ -5,6 +5,8 @@ draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = [""]
+# Optional long list of authors shown on publication page but not widget list.
+# authors_long = [""]
 
 # Publication type.
 # Legend:
