@@ -23,7 +23,7 @@
 # Buttons
 
 - id: btn_preprint
-  translation: arXiv
+  translation: Preprint
 
 - id: btn_pdf
   translation: PDF
